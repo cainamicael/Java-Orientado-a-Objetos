@@ -1,0 +1,51 @@
+Importando ArrayList:
+import java.util.ArrayList;
+
+Criando ArrayList:
+ArrayList<tipo> arrayDinamico = new ArrayList<tipo>();
+
+Tipos no ArrayList:
+Pode ser uma Classe ou as classes padrões dos tipos
+Integer, Float, Double, Character, String 
+
+Adicionando elemento no ArrayList:
+arrayDinamico.add("Nome da pessoa");
+
+Ver tamanho do ArrayList:
+arrayDinamico.size();
+
+Pegar elemento pela posição (índice) no ArrayList:
+arrayDinamico.get(1);
+
+removendo elemento do ArrayList:
+arrayDinamico.remove(indice);
+
+Limpando ArrayList:
+arrayDinamico.clear();
+
+Imprimindo ArrayList:
+for (String elemento : arrayDinamico) {
+    System.out.println(elemento);
+}
+
+ArrayList com objetos Modelo 1:
+Pessoa joao = new Pessoa(nome, idade);
+Pessoa maria = new Pessoa(nome, idade);
+ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
+pessoa.add(joao);
+pessoa.add(maria);
+for (Pessoa pessoa : pessoas){
+    System.out.println(pessoas.getNome());
+}
+
+ArrayList com objetos Modelo 2:
+ArrayList<Pesoa> pessoas = new ArrayList<Pessoa>();
+pessoas.add(new Pessoa(nome, idade));
+pessoas.add(new Pessoa(nome, idade));
+pessoas.add(new Pessoa(nome, idade));
+for (Pessoa pessoa : pessoas){
+    Sustem.out.println(pessoa.getNome());
+}
+
+imprimindo na ordem:
+Collections.sort(numeros, Collections.ReverseOrder()); // numeros é um ArrayList
